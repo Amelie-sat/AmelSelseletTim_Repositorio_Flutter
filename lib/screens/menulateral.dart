@@ -1,10 +1,11 @@
-
 import 'package:flutter/material.dart';
+
 import 'pantalla1.dart';
 import 'pantalla2.dart';
 import 'pantalla3.dart';
 import 'pantalla4.dart';
 import 'pantalla5.dart';
+import 'pantalla6.dart';
 
 class MenuLateral extends StatelessWidget {
   const MenuLateral({super.key});
@@ -21,9 +22,7 @@ class MenuLateral extends StatelessWidget {
             onTap: () {
               Navigator.of(context).pop();
               Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const Pantalla1(),
-                ),
+                MaterialPageRoute(builder: (context) => const Pantalla1()),
               );
             },
           ),
@@ -34,9 +33,7 @@ class MenuLateral extends StatelessWidget {
             onTap: () {
               Navigator.of(context).pop();
               Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const Pantalla2(),
-                ),
+                MaterialPageRoute(builder: (context) => const Pantalla2()),
               );
             },
           ),
@@ -47,9 +44,7 @@ class MenuLateral extends StatelessWidget {
             onTap: () {
               Navigator.of(context).pop();
               Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const Pantalla3(),
-                ),
+                MaterialPageRoute(builder: (context) => const Pantalla3()),
               );
             },
           ),
@@ -60,9 +55,7 @@ class MenuLateral extends StatelessWidget {
             onTap: () {
               Navigator.of(context).pop();
               Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const Pantalla4(),
-                ),
+                MaterialPageRoute(builder: (context) => const Pantalla4()),
               );
             },
           ),
@@ -73,9 +66,18 @@ class MenuLateral extends StatelessWidget {
             onTap: () {
               Navigator.of(context).pop();
               Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const Pantalla5(),
-                ),
+                MaterialPageRoute(builder: (context) => const Pantalla5()),
+              );
+            },
+          ),
+
+          ListTile(
+            leading: const Icon(Icons.text_fields),
+            title: const Text('6. Fuentes y textos'),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const Pantalla6()),
               );
             },
           ),
