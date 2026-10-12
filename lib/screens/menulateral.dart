@@ -6,6 +6,7 @@ import 'pantalla3.dart';
 import 'pantalla4.dart';
 import 'pantalla5.dart';
 import 'pantalla6.dart';
+import 'pantalla7.dart';
 
 class MenuLateral extends StatelessWidget {
   const MenuLateral({super.key});
@@ -16,6 +17,7 @@ class MenuLateral extends StatelessWidget {
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
+          const SizedBox(height: 50),
           ListTile(
             leading: const Icon(Icons.person),
             title: const Text('1. Mis datos'),
@@ -78,6 +80,17 @@ class MenuLateral extends StatelessWidget {
               Navigator.of(context).pop();
               Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => const Pantalla6()),
+              );
+            },
+          ),
+
+          ListTile(
+            leading: const Icon(Icons.image),
+            title: const Text('7. Tres imágenes iguales'),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const Pantalla7()),
               );
             },
           ),
