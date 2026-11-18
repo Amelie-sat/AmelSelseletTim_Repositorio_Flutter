@@ -7,6 +7,8 @@ import 'pantalla4.dart';
 import 'pantalla5.dart';
 import 'pantalla6.dart';
 import 'pantalla7.dart';
+import 'pantalla8.dart';
+//import 'pantalla9.dart';
 
 class MenuLateral extends StatelessWidget {
   const MenuLateral({super.key});
@@ -94,6 +96,18 @@ class MenuLateral extends StatelessWidget {
               );
             },
           ),
+
+          ListTile(
+            leading: const Icon(Icons.image),
+            title: const Text('8. Pirámide de imágenes'),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const Pantalla8()),
+              );
+            },
+          ),
+          
         ],
       ),
     );
