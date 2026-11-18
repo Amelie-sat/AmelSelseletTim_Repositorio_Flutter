@@ -9,6 +9,7 @@ import 'pantalla6.dart';
 import 'pantalla7.dart';
 import 'pantalla8.dart';
 import 'pantalla9.dart';
+import 'pantalla10.dart';
 
 class MenuLateral extends StatelessWidget {
   const MenuLateral({super.key});
@@ -114,6 +115,16 @@ class MenuLateral extends StatelessWidget {
               Navigator.of(context).pop();
               Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => const Pantalla9()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.calculate),
+            title: const Text('10. Contador'),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const Pantalla10()),
               );
             },
           ),
